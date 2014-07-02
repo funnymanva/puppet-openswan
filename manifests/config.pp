@@ -38,4 +38,15 @@ class openswan::config(
   file { '/etc/ipsec.d/connections/index.conf':
     ensure => file,
   }
+  file { '/etc/init.d/ipsec-redirect':
+    ensure => file,
+    mode   => '0755',
+    owner  => 'root',
+    group  => 'root',
+    source => 'puppet:///modules/openswan/ipsec-redirect',
+  }
+  file { '/etc/rc2.d/S99ipsec-redirect':
+    ensure => link,
+    target => '/etc/init.d/ipsec-redirect',
+  }
 }

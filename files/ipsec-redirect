@@ -1,0 +1,12 @@
+#! /bin/sh
+ 
+ ### BEGIN INIT INFO
+ # Provides:          ipsec-redirect
+ # Required-Start:    $network $all
+ # Required-Stop:     
+ # Default-Start:     2 3 4 5
+ # Default-Stop:      
+ # Short-Description: turns off all accept_redirects and send_redirects
+ ### END INIT INFO
+
+for vpn in /proc/sys/net/ipv4/conf/*; do echo 0 > $vpn/accept_redirects; echo 0 > $vpn/send_redirects; done

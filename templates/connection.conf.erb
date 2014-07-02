@@ -21,10 +21,10 @@ conn <%= @name %>
   ike=<%= @ike %>
 <% end -%>
 <% if @phase2alg -%>
-  ike=<%= @phase2alg %>
+  phase2alg=<%= @phase2alg %>
 <% end -%>
 <% if @aggrmode -%>
-  ike=<%= @aggrmode %>
+  aggrmode=<%= @aggrmode %>
 <% end -%>
 <% if @left -%>
   left=<%= @left %>
@@ -54,13 +54,13 @@ conn <%= @name %>
   rightsubnet=<%= @rightsubnet %>
 <% end -%>
 <% if @dpddelay -%>
-  rightsubnet=<%= @dpddelay %>
+  dpddelay=<%= @dpddelay %>
 <% end -%>
 <% if @dpdtimeout -%>
-  rightsubnet=<%= @dpdtimeout %>
+  dpdtimeout=<%= @dpdtimeout %>
 <% end -%>
 <% if @dpdaction -%>
-  rightsubnet=<%= @dpdaction %>
+  dpdaction=<%= @dpdaction %>
 <% end -%>
 <% if @also -%>
   also=<%= @also %>

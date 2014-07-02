@@ -15,5 +15,8 @@ config setup
         virtual_private=<%= @virtual_private %>
         oe=<%= @opportunistic_encryption %>
         protostack=<%= @protostack %>
+<% if @nhelpers -%>
+        nhelpers=<%= @nhelpers %>
+<% end -%>
 
 include /etc/ipsec.d/connections/*.conf

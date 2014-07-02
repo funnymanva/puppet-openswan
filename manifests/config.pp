@@ -4,7 +4,8 @@ class openswan::config(
  $opportunistic_encryption,
  $plutoopts = undef,
  $protostack,
- $virtual_private
+ $virtual_private,
+ $nhelpers
 ) {
 
   File {

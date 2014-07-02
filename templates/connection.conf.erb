@@ -5,6 +5,9 @@ conn <%= @name %>
 <% if @pfs -%>
   pfs=<%= @pfs %>
 <% end -%>
+<% if @keyingtries -%>
+  keyingtries=<%= @keyingtries %>
+<% end -%>
 <% if @rekey -%>
   rekey=<%= @rekey %>
 <% end -%>
@@ -17,14 +20,26 @@ conn <%= @name %>
 <% if @ike -%>
   ike=<%= @ike %>
 <% end -%>
+<% if @phase2alg -%>
+  ike=<%= @phase2alg %>
+<% end -%>
+<% if @aggrmode -%>
+  ike=<%= @aggrmode %>
+<% end -%>
 <% if @left -%>
   left=<%= @left %>
+<% end -%>
+<% if @leftid -%>
+  leftid=<%= @leftid %>
 <% end -%>
 <% if @leftnexthop -%>
   leftnexthop=<%= @leftnexthop %>
 <% end -%>
 <% if @leftprotoport -%>
   leftprotoport=<%= @leftprotoport %>
+<% end -%>
+<% if @leftsubnet -%>
+  leftsubnet=<%= @leftsubnet %>
 <% end -%>
 <% if @right -%>
   right=<%= @right %>
@@ -37,6 +52,18 @@ conn <%= @name %>
 <% end -%>
 <% if @rightsubnet -%>
   rightsubnet=<%= @rightsubnet %>
+<% end -%>
+<% if @dpddelay -%>
+  rightsubnet=<%= @dpddelay %>
+<% end -%>
+<% if @dpdtimeout -%>
+  rightsubnet=<%= @dpdtimeout %>
+<% end -%>
+<% if @dpdaction -%>
+  rightsubnet=<%= @dpdaction %>
+<% end -%>
+<% if @also -%>
+  also=<%= @also %>
 <% end -%>
 <% if @auto -%>
   auto=<%= @auto %>

@@ -4,6 +4,7 @@ define openswan::connection(
   $esp               = undef,
   $ike               = undef,
   $left              = undef,
+  $leftid            = undef,
   $leftsubnet        = undef,
   $leftprotoport     = undef,
   $leftnexthop       = undef,
@@ -14,7 +15,15 @@ define openswan::connection(
   $rightsubnet       = undef,
   $rightsubnetwithin = undef,
   $type              = undef,
-  $opts              = undef
+  $keyingtries       = undef,
+  $phase2alg         = undef,
+  $aggrmode          = undef,
+  $leftsubnet        = undef,
+  $dpddelay          = undef,
+  $dpdtimeout        = undef,
+  $dpdaction         = undef,
+  $also              = undef,
+  $opts              = undef,
 ) {
 
   File {

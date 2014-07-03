@@ -23,6 +23,7 @@ define openswan::connection(
   $dpdtimeout        = undef,
   $dpdaction         = undef,
   $also              = undef,
+  $forceencaps       = undef,
   $opts              = undef,
 ) {
 

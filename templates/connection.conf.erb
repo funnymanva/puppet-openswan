@@ -68,6 +68,9 @@ conn <%= @name %>
 <% if @auto -%>
   auto=<%= @auto %>
 <% end -%>
+<% if @forceencaps -%>
+  forceencaps=<%= @forceencaps %>
+<% end -%>
 <% if @opts -%>
 <% @opts.each do |k,v| -%>
   <%= k %>=<%= v %>
